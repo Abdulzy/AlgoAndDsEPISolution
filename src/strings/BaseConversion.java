@@ -10,7 +10,6 @@ public class BaseConversion {
     int count = 0;
     boolean negate = number.startsWith("-");
     if(negate){
-      result.append("-");
       val = val * -1;
     }
     while(val > 0){
@@ -31,7 +30,7 @@ public class BaseConversion {
 
 
   public static void main(String[] args) {
-    String index = "1111";
+    String index = "-1111";
     var s = new BaseConversion();
     String result = s.solution(index, 2,8);
     System.out.println((s.solution(index, 2,8)));
