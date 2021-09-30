@@ -5,9 +5,9 @@ import scoring.scoring;
 import java.util.LinkedList;
 
 public class testForCyclicity {
-  public static java.util.LinkedList<Integer> solution(java.util.LinkedList<Integer> list, int start, int stop) {
+  public static LinkedList<Integer> solution(LinkedList<Integer> list, int start, int stop) {
 
-    var ans = new java.util.LinkedList<Integer>();
+    var ans = new LinkedList<Integer>();
     // loop through till values repeat, if  does repeat return head, if it never does return null
     return ans;
   }
