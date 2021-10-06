@@ -2,13 +2,11 @@ package linkedList;
 
 import scoring.scoring;
 
+public class listPivoting {
+  public static java.util.LinkedList<Integer> solution(java.util.LinkedList<Integer> list1) {
+    //go through the list and add values to list depending on whether it was higher, lower and equal.
 
-public class singlyLinkedListPalindromic {
-  public static boolean solution(java.util.LinkedList<Integer> list1) {
-    //go through the list and continuously add the values to the head.
-    //check if the values are equal
-
-    return false;
+    return list1;
   }
 
   public static void main(String[] args) {
