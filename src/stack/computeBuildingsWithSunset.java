@@ -2,9 +2,7 @@ package stack;
 
 import scoring.scoring;
 
-import java.util.Deque;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 
 public class computeBuildingsWithSunset {
   private static class BuildingWithHeight {
@@ -33,9 +31,9 @@ public class computeBuildingsWithSunset {
 
   public static void main(String[] args) {
     // causing an error
-    Iterator<Integer> s = (Iterator<Integer>) new LinkedList<>();
+    List<Integer> s = Arrays.asList(4, 2, 3, 1);
 
-    System.out.println(solution(s));
+    System.out.println(solution(s.iterator()));
     System.out.println(scoring.scoreSolution(5,5,5,5));
 
   }
