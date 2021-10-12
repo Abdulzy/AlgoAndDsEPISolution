@@ -1,9 +1,4 @@
-package stackAndQueues;
-
-import scoring.scoring;
-
-import java.util.Deque;
-import java.util.LinkedList;
+package stack;
 
 public class searchPostingList {
 //  public static void solution(PostingListNode L) {

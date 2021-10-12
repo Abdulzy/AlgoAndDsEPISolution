@@ -1,4 +1,4 @@
-package stackAndQueues;
+package stack;
 
 import scoring.scoring;
 
