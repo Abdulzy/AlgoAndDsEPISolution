@@ -46,6 +46,7 @@ public class circularQueue {
 
     for (int i = 0; i < 6; i++) {
       System.out.println(q.dequeue());
+      System.out.println("Size of array:" +q.size());
     }
   }
 }
