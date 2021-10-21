@@ -1,6 +1,6 @@
 package trees;
 
-public class LCABinaryTree {
+public class LCA {
   TreeNode found = null;
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     recurseTree(root,p,q);
