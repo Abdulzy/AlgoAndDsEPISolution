@@ -1,9 +1,9 @@
 package trees;
 
 public class KthNodeInOrderTraversal {
-//  public static BinaryTreeNode<Integer> findKthNodeBinaryTree(
-//    BinaryTreeNode<Integer> tree, int k) {
-//    BinaryTreeNode<Integer> iter = tree;
+//  public static TreeNode<Integer> findKthNodeBinaryTree(
+//    TreeNode<Integer> tree, int k) {
+//    TreeNode<Integer> iter = tree;
 //    while (iter != null) {
 //      int leftSize = iter.left != null ? iter.left.size : 0;
 //      if (leftSize + 1 < k) { // k-th node must be in right subtree of iter.
