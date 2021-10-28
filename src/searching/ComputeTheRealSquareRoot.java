@@ -33,7 +33,7 @@ public class ComputeTheRealSquareRoot {
   }
 
   public static void main(String[] args) {
-    System.out.println((searchSorted( 2)));
+    System.out.println((searchSorted( 0.5F)));
     System.out.println(scoring.scoreSolution(0,1,3,2));
   }
 }
