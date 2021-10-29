@@ -22,4 +22,7 @@ public class intersectionOfTwoArraysUnique {
     if (set1.size() < set2.size()) return set_intersection(set1, set2);
     else return set_intersection(set2, set1);
   }
+
+  //Use two pointers and get it done in O(n+m) time
+  // comparing and iterating when a value is bigger than the other or vice versa
 }
