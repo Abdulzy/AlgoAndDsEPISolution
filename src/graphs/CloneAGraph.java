@@ -6,6 +6,7 @@ import java.util.HashMap;
 
 // using a map to check if it exist and if it doesnt add it to the edges
 public class CloneAGraph {
+
   private HashMap<Node, Node> visited = new HashMap <> ();
   public Node cloneGraph(Node node) {
     if (node == null) {
