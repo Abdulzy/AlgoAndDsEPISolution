@@ -12,6 +12,7 @@ public class testForCyclicity {
     return ans;
   }
 
+
   public static void main(String[] args) {
     var s = new LinkedList<Integer>();
     int x = 1;
