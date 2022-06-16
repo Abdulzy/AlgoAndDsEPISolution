@@ -1,6 +1,7 @@
 package strings;
 
 public class Permutation {
+  //Still dont get it
   public boolean checkInclusion(String s1, String s2) {
     if (s1.length() > s2.length())
       return false;
