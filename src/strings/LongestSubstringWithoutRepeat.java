@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LongestSubstringWithoutRepeat {
+  //Still don't get it
   public int lengthOfLongestSubstring(String s) {
     int n = s.length(), ans = 0;
     Map<Character, Integer> map = new HashMap<>(); // current index of character
