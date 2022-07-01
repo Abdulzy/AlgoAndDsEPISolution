@@ -1,6 +1,7 @@
 package searching;
 
 public class MajorityElement {
+  //Boyer-Moore Voting Algorithm
   public int majorityElement(int[] nums) {
     int count = 0;
     Integer candidate = null;
