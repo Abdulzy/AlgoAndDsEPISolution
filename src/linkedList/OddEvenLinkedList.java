@@ -6,7 +6,7 @@ public class OddEvenLinkedList {
     ListNode2 odd = head;
     ListNode2 even = head.next;
     ListNode2 evenHead = head.next;
-    // `even != null` rules out the list of only 1 node
+    // even != null` rules out the list of only 1 node
     // `even.next != null` rules out the list of only 2 nodes
     while (even != null && even.next != null) {
       // Put odd to the odd list
