@@ -20,7 +20,6 @@ public class ReverseSingleSublist {
     }
     return ans;
   }
-
   public static void main(String[] args) {
     var s = new LinkedList<Integer>();
     int x = 1;
@@ -34,6 +33,5 @@ public class ReverseSingleSublist {
 
     System.out.println(solution(s,x,y));
     System.out.println(scoring.scoreSolution(5,5,5,5));
-
   }
 }
