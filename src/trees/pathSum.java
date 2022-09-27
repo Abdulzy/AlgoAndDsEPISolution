@@ -6,6 +6,16 @@ public class pathSum {
     return helper(root,targetSum,val);
   }
 
+  public boolean hasPathSum2(TreeNode root, int sum) {
+    if (root == null)
+      return false;
+
+    sum -= root.val;
+    if ((root.left == null) && (root.right == null))
+      return (sum == 0);
+    return hasPathSum2(root.left, sum) || hasPathSum2(root.right, sum);
+  }
+
 
 
   public boolean helper(TreeNode root,int total, int pathVal){
