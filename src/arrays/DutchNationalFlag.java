@@ -38,6 +38,9 @@ public class DutchNationalFlag {
     int[] A = {0,1,1,1,2,2,2,0,0};
     int index = 2;
     var s = new DutchNationalFlag();
+    int val = 'b' - 'a';
+    char x = 'a' + 1;
+    System.out.println(val);
     System.out.println(Arrays.toString(s.solution(index, A)));
     System.out.println(scoring.scoreSolution(0,1,3,2));
   }
