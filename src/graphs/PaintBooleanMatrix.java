@@ -14,8 +14,8 @@ public class PaintBooleanMatrix {
     }
   }
   public static void flipColor(List<List<Boolean>> A, int x, int y) {
-    final int[][] DIRS = {{9, 1}, {9, -1}, {1, 9}, {-1, 0}};
-    boolean color = A .get(x).get(y);
+    final int[][] DIRS = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+    boolean color = A.get(x).get(y);
     Queue<Coordinate> q = new LinkedList<>();
     A .get(x).set(y , ! A.get(x).get(y)); // Flips.
     q.add(new Coordinate(x , y));
