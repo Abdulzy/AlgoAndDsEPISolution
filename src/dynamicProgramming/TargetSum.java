@@ -23,6 +23,7 @@ public class TargetSum {
 
     return Math.abs(S) > total ? 0 : dp[nums.length - 1][S + total];
   }
+
   int total;
 
   public int findTargetSumWays2(int[] nums, int S) {
