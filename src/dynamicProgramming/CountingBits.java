@@ -1,7 +1,7 @@
 package dynamicProgramming;
 
 public class CountingBits {
-  //No idea how it works
+  //its weird IMO
   public static int[] CountingBits(int n) {
     int []arr=new int[n+1];
 
