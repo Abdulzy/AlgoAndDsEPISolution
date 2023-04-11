@@ -1,5 +1,7 @@
 package dynamicProgramming;
 
+import scoring.scoring;
+
 public class HouseRobber {
   //initial attempt was wrong but good
   public int rob1(int[] nums) {
@@ -16,7 +18,7 @@ public class HouseRobber {
 
     return Math.max(odd,even);
   }
-  public int rob(int[] nums) {
+  public static int rob(int[] nums) {
     int prev1 = 0;
     int prev2 = 0;
 
@@ -27,5 +29,9 @@ public class HouseRobber {
     }
 
     return prev1;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(rob(new int[]{1,2,3,5,1}));
   }
 }
