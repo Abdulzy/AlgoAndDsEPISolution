@@ -21,4 +21,10 @@ public class MaximumProductArray {
     }
     return ans;
   }
+
+  public void main(String[] args) {
+    System.out.println(maxProduct(new int[]{1,2,-3,5,1}));
+  }
+
+
 }
