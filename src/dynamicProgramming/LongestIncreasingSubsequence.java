@@ -40,4 +40,6 @@ public class LongestIncreasingSubsequence {
 
     return left;
   }
+
+  //My new approach would be to check if the next value is greater or less and increment the increase counter
 }
