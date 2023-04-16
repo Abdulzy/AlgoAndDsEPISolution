@@ -42,6 +42,7 @@ public class LongestIncreasingSubsequence {
   }
 
   //My new approach would be to check if the next value is greater or less and increment the increase counter
+  // solution is different from my initial thought, thought it had to be consecutive numbers but not the case
   public int lengthOfLIS2(int[] nums) {
     int size = nums.length;
     int[] dp = new int[size];
