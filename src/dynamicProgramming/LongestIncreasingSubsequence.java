@@ -3,7 +3,7 @@ package dynamicProgramming;
 import java.util.ArrayList;
 
 public class LongestIncreasingSubsequence {
-  public int lengthOfLIS(int[] nums) {
+  public static int lengthOfLIS(int[] nums) {
     ArrayList<Integer> sub = new ArrayList<>();
     sub.add(nums[0]);
 
@@ -20,7 +20,7 @@ public class LongestIncreasingSubsequence {
     return sub.size();
   }
 
-  private int binarySearch(ArrayList<Integer> sub, int num) {
+  private static int binarySearch(ArrayList<Integer> sub, int num) {
     int left = 0;
     int right = sub.size() - 1;
     int mid = (left + right) / 2;
@@ -43,7 +43,7 @@ public class LongestIncreasingSubsequence {
 
   //My new approach would be to check if the next value is greater or less and increment the increase counter
   // solution is different from my initial thought, thought it had to be consecutive numbers but not the case
-  public int lengthOfLIS2(int[] nums) {
+  public static int lengthOfLIS2(int[] nums) {
     int size = nums.length;
     int[] dp = new int[size];
     dp[0] = nums[0];
@@ -64,5 +64,9 @@ public class LongestIncreasingSubsequence {
       }
     }
     return max;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(lengthOfLIS2(new int[]{2,3,7,1,2,3,3,4,5,6}));
   }
 }
