@@ -18,4 +18,8 @@ public class CoinChange {
     }
     return dp[amount] > amount ? -1 : dp[amount];
   }
+
+  public void main(String[] args) {
+    System.out.println(coinChange(new int[]{2,3,7},20));
+  }
 }
