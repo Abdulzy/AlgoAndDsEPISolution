@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CoinChange {
   //did it again
-  public int coinChange(int[] coins, int amount) {
+  public static int coinChange(int[] coins, int amount) {
     int max = amount + 1;
     int[] dp = new int[amount + 1];
     Arrays.fill(dp, max);
@@ -19,7 +19,7 @@ public class CoinChange {
     return dp[amount] > amount ? -1 : dp[amount];
   }
 
-  public void main(String[] args) {
+  public static void main(String[] args) {
     System.out.println(coinChange(new int[]{2,3,7},20));
   }
 }

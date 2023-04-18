@@ -1,7 +1,7 @@
 package dynamicProgramming;
 
 public class MaximumProductArray {
-  public int maxProduct(int[] nums) {
+  public static int maxProduct(int[] nums) {
     int ans = nums[0];
     int dpMin = nums[0];
     int dpMax = nums[0];
@@ -22,7 +22,7 @@ public class MaximumProductArray {
     return ans;
   }
 
-  public void main(String[] args) {
+  public static void main(String[] args) {
     System.out.println(maxProduct(new int[]{1,2,-3,5,1}));
   }
 
