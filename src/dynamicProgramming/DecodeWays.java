@@ -14,5 +14,6 @@ public class DecodeWays {
       res+=numDecod(p+2,s);
     return res;
   }
-  
+  // Solving in DP, would be to move through the back and use the values at the index 1 index or 2 away depending on
+  // teh scenario
 }
