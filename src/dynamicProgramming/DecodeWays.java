@@ -15,5 +15,18 @@ public class DecodeWays {
     return res;
   }
   // Solving in DP, would be to move through the back and use the values at the index 1 index or 2 away depending on
-  // teh scenario
+  // the scenario
+
+  public int numDecodings2(String s) {
+    int n=s.length();
+    int[] dp=new int[n+1];
+    dp[n]=1;
+    for(int i=n-1;i>=0;i--)
+      if(s.charAt(i)!='0') {
+        dp[i]=dp[i+1];
+        if(i<n-1&&(s.charAt(i)=='1'||s.charAt(i)=='2'&&s.charAt(i+1)<'7'))
+          dp[i]+=dp[i+2];
+      }
+    return dp[0];
+  }
 }
