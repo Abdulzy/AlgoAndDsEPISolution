@@ -2,10 +2,10 @@ package dynamicProgramming;
 
 public class DecodeWays {
   // initial thought is to use recursion, and recurse with the choice of 1 character or 2
-  public int numDecodings(String s) {
+  public static int numDecodings(String s) {
     return s.length()==0?0:numDecod(0,s);
   }
-  private int numDecod(int p, String s) {
+  private static  int numDecod(int p, String s) {
     int n=s.length();
     if(p==n) return 1;
     if(s.charAt(p)=='0') return 0;
@@ -17,7 +17,7 @@ public class DecodeWays {
   // Solving in DP, would be to move through the back and use the values at the index 1 index or 2 away depending on
   // the scenario
 
-  public int numDecodings2(String s) {
+  public static int numDecodings2(String s) {
     int n=s.length();
     int[] dp=new int[n+1];
     dp[n]=1;
@@ -28,5 +28,9 @@ public class DecodeWays {
           dp[i]+=dp[i+2];
       }
     return dp[0];
+  }
+
+  public static void main(String[] args) {
+    System.out.println(numDecodings("11045"));
   }
 }
