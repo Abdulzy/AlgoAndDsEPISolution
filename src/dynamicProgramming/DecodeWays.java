@@ -14,4 +14,5 @@ public class DecodeWays {
       res+=numDecod(p+2,s);
     return res;
   }
+  
 }
