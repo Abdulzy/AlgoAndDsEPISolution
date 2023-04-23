@@ -2,7 +2,7 @@ package dynamicProgramming;
 
 public class CombinationSumIV {
   // Had the right approach but couldn't finish appropriately
-  // Went with recursion, couln't think of a way to use a 2D array or 3d array
+  // Went with recursion, couldn't think of a way to use a 2D array or 3d array
   public static int combinationSum4(int[] nums, int target) {
     Integer[] memo = new Integer[target + 1];
     return recurse(nums, target, memo);
