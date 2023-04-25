@@ -5,7 +5,7 @@ public class UniquePath {
   // using DP, initial all the [0][0....n] with 1 and also [0....n][0] with 1
   // aAfter which i would iterate through from[1][1] to the remaining index by adding the values from the left index
   // and top index and inserting it into the current index
-  public int uniquePaths(int m, int n) {
+  public static int uniquePaths(int m, int n) {
     int[][] arr = new int[m][n];
     for (int i = 0; i < m; i++) {
       arr[i][0] = 1;
@@ -20,4 +20,9 @@ public class UniquePath {
     }
     return arr[m-1][n-1];
   }
+
+  public static void main(String[] args) {
+    System.out.println(uniquePaths(2,3));
+  }
+
 }
