@@ -7,14 +7,25 @@ public class JumpGame {
   // using the value at a index to calculate which other index you can reach. My solution can also account for which
   // path was taken
   public static boolean canJump(int[] nums) {
+    if(nums.length <= 1 ){
+      return true;
+    }
+    if(nums[0] == 0){
+      return false;
+    }
     int[] result = new int[nums.length];
     for (int i = 0; i < result.length; i++) {
       result[i] = Integer.MAX_VALUE;
     }
     for (int i = 0; i < nums.length - 1; i++) {
       for (int j = 1; j <= nums[i]; j++) {
-        if(i < result[i+j]){
-          result[i+j] = i;
+        if(result[i] == Integer.MAX_VALUE && i > 0){
+          return false;
+        }
+        if((i+j) < result.length){
+          if(i < result[i+j]){
+            result[i+j] = i;
+          }
         }
       }
     }
