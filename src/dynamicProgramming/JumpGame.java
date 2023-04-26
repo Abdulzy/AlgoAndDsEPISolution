@@ -6,13 +6,13 @@ public class JumpGame {
   // which would help with decided what the new value would be.
   // using the value at a index to calculate which other index you can reach. My solution can also account for which
   // path was taken
-  public boolean canJump(int[] nums) {
+  public static boolean canJump(int[] nums) {
     int[] result = new int[nums.length];
     for (int i = 0; i < result.length; i++) {
       result[i] = Integer.MAX_VALUE;
     }
     for (int i = 0; i < nums.length - 1; i++) {
-      for (int j = 0; j < nums[i]; j++) {
+      for (int j = 1; j <= nums[i]; j++) {
         if(i < result[i+j]){
           result[i+j] = i;
         }
@@ -24,4 +24,9 @@ public class JumpGame {
 
     return true;
   }
+
+  public static void main(String[] args) {
+    System.out.println(canJump(new int[]{2,3,1,1,4}));
+  }
+
 }
