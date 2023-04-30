@@ -67,6 +67,6 @@ public class LongestIncreasingSubsequence {
   }
 
   public static void main(String[] args) {
-    System.out.println(lengthOfLIS2(new int[]{2,3,7,1,2,3,3,4,5,6}));
+    System.out.println(lengthOfLIS2(new int[]{1,3,5,4,7}));
   }
 }
