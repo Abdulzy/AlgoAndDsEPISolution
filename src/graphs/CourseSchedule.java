@@ -68,7 +68,3 @@ public class CourseSchedule {
     return node;
   }
 }
-class GNode {
-  public Integer inDegrees = 0;
-  public List<Integer> outNodes = new LinkedList<Integer>();
-}
