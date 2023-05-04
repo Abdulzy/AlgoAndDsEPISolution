@@ -6,13 +6,12 @@ import java.util.List;
 import java.util.Set;
 
 public class GraphValidTree {
-  class Solution {
 
-    private List<List<Integer>> adjacencyList = new ArrayList<>();
-    private Set<Integer> seen = new HashSet<>();
+  static List<List<Integer>> adjacencyList = new ArrayList<>();
+  static Set<Integer> seen = new HashSet<>();
 
 
-    public boolean validTree(int n, int[][] edges) {
+    public static boolean validTree(int n, int[][] edges) {
 
       if (edges.length != n - 1) return false;
 
@@ -24,12 +23,10 @@ public class GraphValidTree {
         adjacencyList.get(edge[1]).add(edge[0]);
       }
 
-      // We return true iff no cycles were detected,
-      // AND the entire graph has been reached.
       return dfs(0, -1) && seen.size() == n;
     }
 
-    public boolean dfs(int node, int parent) {
+    public static boolean dfs(int node, int parent) {
       if (seen.contains(node)) return false;
       seen.add(node);
       for (int neighbour : adjacencyList.get(node)) {
@@ -40,5 +37,9 @@ public class GraphValidTree {
       }
       return true;
     }
+
+  public static void main(String[] args) {
+    System.out.println(validTree(5,new int[][]{{0,1},{0,2},{0,3},{1,4}}));
   }
+
 }

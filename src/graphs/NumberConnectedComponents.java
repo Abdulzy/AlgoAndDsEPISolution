@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NumberConnectedComponents {
-  private void dfs(List<Integer>[] adjList, int[] visited, int startNode) {
+  private static void dfs(List<Integer>[] adjList, int[] visited, int startNode) {
     visited[startNode] = 1;
 
     for (int i = 0; i < adjList[startNode].size(); i++) {
@@ -14,7 +14,7 @@ public class NumberConnectedComponents {
     }
   }
 
-  public int countComponents(int n, int[][] edges) {
+  public static int countComponents(int n, int[][] edges) {
     int components = 0;
     int[] visited = new int[n];
 
@@ -35,5 +35,9 @@ public class NumberConnectedComponents {
       }
     }
     return components;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(countComponents(5,new int[][]{{0,1},{1,2},{3,4}}));
   }
 }

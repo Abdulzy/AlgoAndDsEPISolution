@@ -9,10 +9,10 @@ import java.util.Map;
 // using a map to check if it exist and if it doesnt add it to the edges
 public class CloneAGraph {
 
-  public Node cloneGraph(Node node) {
+  public static Node cloneGraph(Node node) {
     return cloneGraphHelper(node, new HashMap<>());
   }
-  public Node cloneGraphHelper(Node node, Map<Node, Node> visited) {
+  public static Node cloneGraphHelper(Node node, Map<Node, Node> visited) {
     if (node == null) return null;
 
     if (visited.containsKey(node)) return visited.get(node);
@@ -24,5 +24,9 @@ public class CloneAGraph {
       newNode.neighbors.add(cloneGraphHelper(child, visited));
     }
     return newNode;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(cloneGraph(new Node(5)));
   }
 }
