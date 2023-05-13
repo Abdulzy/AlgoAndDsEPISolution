@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class CourseSchedule {
 
-  // just a random update cause i have been busy with graduaion
+  // just a random update cause i have been busy with graduation
   public boolean canFinish(int numCourses, int[][] prerequisites)
   {
     boolean [] visited = new boolean[prerequisites.length];
