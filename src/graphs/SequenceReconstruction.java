@@ -9,4 +9,7 @@ public class SequenceReconstruction {
   //For example, for sequences = [[1,2],[1,3]], there are two shortest supersequences, [1,2,3] and [1,3,2].
   //While for sequences = [[1,2],[1,3],[1,2,3]], the only shortest supersequence possible is [1,2,3]. [1,2,3,4] is a
   // possible supersequence but not the shortest.
+
+
+  //I still don't undertstand this, i'll try that tomorrow
 }
