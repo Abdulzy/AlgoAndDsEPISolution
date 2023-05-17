@@ -11,5 +11,6 @@ public class SequenceReconstruction {
   // possible supersequence but not the shortest.
 
 
-  //I still don't undertstand this, i'll try that tomorrow
+  //I still don't understand this, i'll try that tomorrow
+
 }

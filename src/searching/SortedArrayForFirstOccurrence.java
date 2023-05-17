@@ -1,9 +1,6 @@
 package searching;
 
-import arrays.DutchNationalFlag;
 import scoring.scoring;
-
-import java.util.Arrays;
 
 public class SortedArrayForFirstOccurrence {
   public static int searchSorted(int[] nums, int target) {

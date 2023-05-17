@@ -1,10 +1,5 @@
 package dynamicProgramming;
 
-import arrays.DutchNationalFlag;
-import scoring.scoring;
-
-import java.util.Arrays;
-
 public class RangeSumQuery {
   int[] Arr;
 

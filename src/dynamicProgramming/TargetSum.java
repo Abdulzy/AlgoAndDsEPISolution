@@ -1,6 +1,5 @@
 package dynamicProgramming;
 
-import arrays.DutchNationalFlag;
 import scoring.scoring;
 
 import java.util.Arrays;
