@@ -26,5 +26,14 @@ public class MissingNumber {
   // get the total of all numbers from 0...n, subtract the values in the provided array from nums then return the final
   // number. saves space compared to teh first solution but same time.
 
-
+  public int missingNumber(int[] nums) {
+    int total = 0;
+    for (int i = 0; i <= nums.length; i++) {
+      total = total + i;
+    }
+    for (int i = 0; i < nums.length; i++) {
+      total = total - nums[i];
+    }
+    return total;
+  }
 }
