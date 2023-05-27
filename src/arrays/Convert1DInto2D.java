@@ -6,6 +6,10 @@ public class Convert1DInto2D {
   //The elements from indices 0 to n - 1 (inclusive) of original should form the first row of the constructed 2D array,
   // the elements from indices n to 2 * n - 1 (inclusive) should form the second row of the constructed 2D array,
   // and so on.
-  //
   //Return an m x n 2D array constructed according to the above procedure, or an empty 2D array if it is impossible.
+
+
+  //Idea to solving this would be to use math to find the location for the new array, using division for the row and
+  // modulus for the column
+
 }
