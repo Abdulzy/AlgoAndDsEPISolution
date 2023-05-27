@@ -12,10 +12,10 @@ public class Convert1DInto2D {
   //Idea to solving this would be to use math to find the location for the new array, using division for the row and
   // modulus for the column
   public int[][] construct2DArray(int[] original, int m, int n) {
-    int[][] result = new int[m][n];
-    if(original.length > (m*n)){
-      return result;
+    if (m * n != original.length) {
+      return new int[][]{};
     }
+    int[][] result = new int[m][n];
 
     for (int i = 0; i < original.length; i++) {
       result[i/n][i%n] = original[i];
