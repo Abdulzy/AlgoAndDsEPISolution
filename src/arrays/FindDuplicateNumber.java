@@ -21,4 +21,19 @@ public class FindDuplicateNumber {
     return Math.abs(totalSum - rangeSum);
   }
   // didn't understand the question, values could be repeated more than once
+
+  // second idea is to have a boolean array that becomes true when a value is seen. also have a check if the boolean
+  // array is true for that number, then return
+  public int findDuplicate2(int[] nums) {
+    boolean[] result = new boolean[nums.length];
+    for (int i = 0; i < nums.length; i++) {
+      if (result[nums[i]]) {
+        return nums[i];
+      }
+      result[nums[i]] = true;
+    }
+
+    return -1;
+  }
+
 }
