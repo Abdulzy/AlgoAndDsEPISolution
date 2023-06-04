@@ -37,4 +37,6 @@ public class SetMatrixZeroes {
     }
   }
 
+  // I realise there is a way to do it in less space but this is what i thought off
+
 }
