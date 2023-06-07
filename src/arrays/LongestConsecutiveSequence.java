@@ -10,12 +10,18 @@ public class LongestConsecutiveSequence {
   // solution should be O(nLogn)
 
   public int longestConsecutive(int[] nums) {
+    if(nums.length < 2){
+      return nums.length;
+    }
     Arrays.sort(nums);
     int result = 0;
     int consecutive = 1;
     for (int i = 1 ; i < nums.length; i++) {
       if(nums[i] == nums[i-1] + 1 ){
         consecutive++;
+      }
+      else if(nums[i] == nums[i-1]){
+
       }
       else{
         consecutive = 1;
