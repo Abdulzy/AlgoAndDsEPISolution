@@ -14,14 +14,14 @@ public class LongestConsecutiveSequence {
     int result = 0;
     int consecutive = 1;
     for (int i = 1 ; i < nums.length; i++) {
-      if(nums[i] > nums[i-1]){
+      if(nums[i] == nums[i-1] + 1 ){
         consecutive++;
       }
       else{
-        if (consecutive > result){
-          result = consecutive;
-        }
         consecutive = 1;
+      }
+      if (consecutive > result){
+        result = consecutive;
       }
     }
     return result;
