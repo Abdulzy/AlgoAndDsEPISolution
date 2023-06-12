@@ -15,4 +15,18 @@ public class TwoSum {
   //Go through the array and add the values as a key and the index as the value.
   // go through the array again and find the value difference
 
+  public int[] twoSum(int[] nums, int target) {
+    Map<Integer,Integer> numbers = new HashMap<>();
+    for (int i = 0; i < nums.length; i++) {
+      numbers.put(nums[i],i );
+    }
+    for (int i = 0; i < nums.length; i++) {
+      if(numbers.containsKey(target-nums[i]) && i != numbers.get(target-nums[i])){
+        return new int[]{i,numbers.get(target-nums[i])};
+      }
+    }
+
+    return new int[] {-1,-1};
+  }
+
 }
