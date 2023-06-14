@@ -6,4 +6,6 @@ public class SquaresSortedArray {
 
   //go through the array squaring each value with itself in the first iteration.
   // after that you can sort however you please
+  // didnt realise it was sorted to begin with, you can compare the absolute value of the numbers and
+  // insert into a new array
 }
